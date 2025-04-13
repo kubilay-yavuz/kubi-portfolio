@@ -64,7 +64,7 @@ export default function Hero() {
   const handleDownloadCV = (e) => {
     // Create a temporary link element
     const link = document.createElement("a")
-    link.href = process.env.NODE_ENV === "production" ? `/your-repo-name/Kubilay_Yavuz_CV.pdf` : "/Kubilay_Yavuz_CV.pdf"
+    link.href = process.env.NODE_ENV === "production" ? `/kubi-portfolio/Kubilay_Yavuz_CV.pdf` : "/Kubilay_Yavuz_CV.pdf"
     link.download = "Kubilay_Yavuz_CV.pdf"
     document.body.appendChild(link)
     link.click()
